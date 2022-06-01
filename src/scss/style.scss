@@ -13,7 +13,7 @@
 /*--------------------*/
 body {
   font-family: $fontFamily;
-  @include font-source-sans(rem($fontSize), 1.1, 400, $primaryColor);
+  @include font-source-sans(rem($fontSize), 1.1, 400, #000);
   font-style: normal;
   text-align: left;
   position: relative;
@@ -182,7 +182,7 @@ body {
 section {
   width: 100%;
   // padding: rem(160) 0;
-  // @include bg-cover;
+  @include bg-cover;
   // @include mq("tablet", range, "desktop") {
   //   padding: rem(120) 0;
   // }

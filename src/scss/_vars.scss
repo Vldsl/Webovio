@@ -2,7 +2,7 @@ $fontSize: 16;
 $fontFamily: "Montserrat", sans-serif;
 // $fontSecondary: "STIX Two Text", serif;
 
-$maxWidthContainer: 1110;
+$maxWidthContainer: 1140; // 1110 + 30
 $containerPadding: 30;
 $minWidthLayout: 320;
 $maxWidthLayout: 1440;
@@ -14,9 +14,9 @@ $maxWidthLayout: 1440;
 // $red: #da4533;
 // $black: #1b1b1b;
 
-$primaryColor: $grey-primary;
-$secondaryColor: $grey-secondary;
-$tertiaryColor: $white-secondary;
-$brandColor: $red;
-$primaryAccentColor: $white-primary;
-$secondaryAccentColor: $black;
+// $primaryColor: $grey-primary;
+// $secondaryColor: $grey-secondary;
+// $tertiaryColor: $white-secondary;
+// $brandColor: $red;
+// $primaryAccentColor: $white-primary;
+// $secondaryAccentColor: $black;
