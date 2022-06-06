@@ -1,0 +1,20 @@
+.project {
+	padding: rem(150) 0 rem(110) 0;
+
+	&__container {
+		@include mq("tablet-smal") {
+			display: flex;
+			align-items: center;
+			gap: rem(133);
+		}
+	}
+
+
+	&__title {
+		flex: 0 0 rem(325);
+	}
+
+	&__text {
+		flex: 0 0 rem(500);
+	}
+}

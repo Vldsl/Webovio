@@ -1,0 +1,133 @@
+.footer {
+	padding: rem(310) 0 rem(30) 0;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #B6C197;
+
+	&__container {}
+
+	&__top {
+		margin: 0 0 rem(50) 0;
+	}
+
+	&__contact {
+		display: inline-flex;
+		flex-direction: column;
+		gap: rem(10px);
+
+		&-title {
+			line-height: 40px; // &
+		}
+
+		&-info {
+			line-height: 40px;
+			color: #FFFFFF;
+		}
+
+		&+& {
+			margin: 0 0 0 rem(130);
+		}
+	}
+
+	&__body {
+		padding: rem(60) 0;
+		border-top: 1px solid #5D6544;
+		border-bottom: 1px solid #5D6544;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__column {
+		&:last-child {
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: -25%;
+				height: 100%;
+				width: 1px;
+				background-color: #5d6544;
+			}
+		}
+	}
+
+	&__title {
+		margin: 0 0 rem(20) 0;
+		line-height: 38px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+	&__nav {}
+
+	&__item {
+		&+& {
+			margin-top: 10px;
+		}
+	}
+
+	&__link {
+		color: #B6C197;
+	}
+
+	&__text {
+		margin: 0 0 rem(25) 0;
+	}
+
+	&__email {
+		margin: 0 0 rem(25) 0;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 38px;
+		color: #FFFFFF;
+	}
+
+	&__social {
+		display: flex;
+		gap: rem(20);
+
+		&-link {
+			width: 33px;
+			height: 33px;
+			border-radius: 50%;
+			color: #D4D6D4;
+			position: relative;
+			font-size: rem(40);
+
+			&::before {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				@extend %ic;
+			}
+
+			@media (any-hover: hover) {
+				&:hover {
+					color: #FFD723;
+				}
+			}
+		}
+	}
+
+	&__copy {
+		margin: rem(25) 0 0 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		&_icon {
+			display: block;
+			width: rem(200);
+			height: rem(35);
+			fill: #fff;
+		}
+	}
+
+	&__rights {}
+}

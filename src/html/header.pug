@@ -1,10 +1,10 @@
 header.header 
 	.header__container
-		a.header__logo(href="index.html")
+		a.header__logo
 			svg.header__logo_icon
-					use(xlink:href="#header__logo")
+				use(xlink:href="#header__logo")
 		.header__menu
-			button(type="button" class="menu__icon icon-menu")
+			button(type="button", class="menu__icon icon-menu", aria-label="Open menu")
 				span
 			nav.menu
 				ul.menu__list

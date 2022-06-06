@@ -1,116 +1,135 @@
 .header {
-  width: 100%;
-  padding: rem(20) 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
-  &.fixed {
-  }
-  &__container {
-    min-height: rem(50);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  &__logo {
-    // position: relative;
-    // z-index: 5;
-    &_icon {
-      display: block;
-      width: 258px;
-      height: 40px;
-      fill: #fff;
-    }
-  }
-  &__menu {
-  }
+	width: 100%;
+	padding: rem(20) 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+
+	&.fixed {}
+
+	&__container {
+		min-height: rem(50);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__logo {
+		position: relative;
+		z-index: 11;
+
+		&_icon {
+			display: block;
+			width: rem(258);
+			height: rem(40);
+			fill: #fff;
+		}
+	}
+
+	&__menu {}
 }
+
 .icon-menu {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  position: relative;
-  z-index: 10;
-  & span,
-  &:before,
-  &:after {
-    content: "";
-    width: 45%;
-    height: 4.5%;
-    position: absolute;
-    right: calc(50% - 9px);
-    background-color: #000;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  &:before {
-    top: calc(35% - 1px);
-  }
-  &:after {
-    bottom: calc(35% - 1px);
-  }
-  & span {
-    top: calc(50% - 1px);
-  }
-  &.active {
-    & span {
-      transform: scale(0);
-    }
-    &:before {
-      transform: rotate(-45deg);
-      top: calc(50% - 1px);
-    }
-    &:after {
-      transform: rotate(45deg);
-      bottom: calc(50% - 1px);
-    }
-    background: rgba(255, 255, 255, 0.1);
-    & span,
-    &:before,
-    &:after {
-      background-color: #ffd723;
-    }
-    @media (any-hover: hover) {
-      &:hover {
-        background-color: #cc7878;
-      }
-    }
-  }
-  @media (any-hover: hover) {
-    &:hover {
-      background: #aaa;
-      & span,
-      &:before,
-      &:after {
-        background-color: #ffd723;
-      }
-    }
-  }
+	width: rem(40);
+	height: rem(40);
+	border-radius: 50%;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+
+	& span,
+	&:before,
+	&:after {
+		content: "";
+		width: rem(18);
+		height: rem(1.8);
+		position: absolute;
+		right: calc(50% - rem(9));
+		background-color: #000;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+	}
+
+	&:before {
+		top: calc(35% - 1px);
+	}
+
+	&:after {
+		bottom: calc(35% - 1px);
+	}
+
+	& span {
+		top: calc(50% - 1px);
+	}
+
+	&.active {
+
+		& span {
+			transform: scale(0);
+		}
+
+		&:before {
+			transform: rotate(-45deg);
+			top: calc(50% - 1px);
+		}
+
+		&:after {
+			transform: rotate(45deg);
+			bottom: calc(50% - 1px);
+		}
+
+
+		& span,
+		&:before,
+		&:after {
+			background-color: #ffd723;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: #cc7878;
+			}
+		}
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background: #ffd723;
+
+			& span,
+			&:before,
+			&:after {
+				background-color: #eee;
+			}
+		}
+	}
 }
+
 .menu {
-  padding: 15% 3.9% 3.9% 3.9%;
-  position: fixed;
-  top: 0;
-  left: -100%;
-  z-index: 9;
-  height: 50%;
-  width: 80%;
-  opacity: 0;
-  background-color: #ffd723;
-  transition: left 0.3s ease 0s, opacity 0.3s ease 0s;
-  overflow: auto;
-  &.active {
-    opacity: 1;
-    left: 0;
-  }
-  &__icon {
-  }
-  &__list {
-  }
-  &__item {
-  }
-  &__link {
-  }
+	padding: 15% 3.9% 3.9% 3.9%;
+	position: fixed;
+	top: 0;
+	left: -100%;
+	z-index: 9;
+	height: 50%;
+	width: 80%;
+	opacity: 0;
+	background-color: #D4D6D4;
+	transition: left 0.3s ease 0s, opacity 0.3s ease 0s;
+	overflow: auto;
+	box-shadow: 0 100px 100px rgba(0, 0, 0, 0.145947);
+
+	&.active {
+		opacity: 1;
+		left: 0;
+	}
+
+	&__icon {}
+
+	&__list {}
+
+	&__item {}
+
+	&__link {}
 }

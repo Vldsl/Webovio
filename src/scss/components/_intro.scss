@@ -1,6 +1,60 @@
 .intro {
-  position: relative;
-  padding: rem(188) 0 rem(211) 0;
-  &__container {
-  }
+	position: relative;
+	padding: rem(188) 0 rem(211) 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	&__container {}
+
+	&__content {
+		width: 55%;
+	}
+
+	&__suptitle {
+		margin: 0 0 rem(20) 0;
+		font-size: rem(14);
+		line-height: math.div(21, 14);
+		color: #FFFFFF;
+	}
+
+	&__title {
+		margin: 0 0 rem(25) 0;
+		font-weight: 700;
+		font-size: rem(60);
+		line-height: math.div(74, 60);
+		color: #FFFFFF;
+	}
+
+	&__text {
+		margin: 0 0 rem(50) 0;
+		line-height: math.div(26, 16);
+		color: #FFFFFF;
+	}
+
+	&__link {
+
+		padding: 0 0 0 rem(5);
+		margin: 0 0 0 rem(10);
+		line-height: math.div(18, 16);
+		color: #FFD723;
+		border-bottom: 1px solid currentColor;
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: rem(-15);
+			transform: translateY(-50%);
+			@extend %ic;
+			@extend ._icon-arrow;
+		}
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: #D4D6D4;
+				border: none;
+			}
+		}
+	}
 }

@@ -1,0 +1,14 @@
+.client {
+	min-height: rem(113);
+	width: 88.5%;
+	margin: 0 0 0 auto;
+	padding: rem(60) calc((100vw - 1110px) / 2) rem(54) 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: rem(66);
+	position: relative;
+	top: -100px;
+	background-color: #fff;
+	box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+}

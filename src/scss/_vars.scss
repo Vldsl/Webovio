@@ -1,5 +1,5 @@
 $fontSize: 16;
-$fontFamily: "Montserrat", sans-serif;
+$fontFamily: "Poppins", sans-serif;
 // $fontSecondary: "STIX Two Text", serif;
 
 $maxWidthContainer: 1140; // 1110 + 30
@@ -7,11 +7,16 @@ $containerPadding: 30;
 $minWidthLayout: 320;
 $maxWidthLayout: 1440;
 
-// $white-primary: #fff;
-// $white-secondary: #f9f9f9;
-// $grey-primary: #8a8a8a;
-// $grey-secondary: #5c5c5c;
-// $red: #da4533;
+// Цвет текста #213842
+// Цвет h2 #4D533C
+// Цвет ссылок #D4D6D4 и ховера #FFD723
+
+$white-primary: #fff;
+$white-secondary: #D4D6D4;
+$green-primary: #4D533C;
+$grey-secondary: #213842;
+$yellow: #ffd723;
+$green: #152934;
 // $black: #1b1b1b;
 
 // $primaryColor: $grey-primary;

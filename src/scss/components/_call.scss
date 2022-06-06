@@ -1,0 +1,25 @@
+.call {
+	min-height: rem(220);
+	width: 88.5%;
+	margin: 0 auto 0 0;
+	padding: rem(70) 0 rem(70) calc((100vw - 1110px) / 2);
+	background: #FAFAFA;
+	box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	position: relative;
+	bottom: -190px;
+
+	&__title {
+		width: 800px;
+		margin: 0 0 rem(50) 0;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 74px;
+		color: #4D533C;
+	}
+
+	&__link {}
+}
